@@ -1,0 +1,216 @@
+@import "../../variables/variables.scss";
+.mainContainer{
+  height: 100vh;
+}
+.home {
+  height: calc(100vh - 30%);
+  @include containerStyle(150px 0px 7% 0px, row);
+}
+.mainSection {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  h1 {
+    @include header1();
+    @include uniHeader12(left);
+  }
+}
+.up {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 3vh;
+}
+.down {
+  flex: none;
+}
+.description {
+  @include text();
+  @include uniText(left);
+}
+.buttonSection {
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+}
+.navButton {
+  display: flex;
+  align-items: center;
+  li {
+    @include header3();
+    @include uniHeader34(left, uppercase);
+    margin: 0px 0px 0px 0px;
+    list-style-type: none;
+  }
+}
+.activeSectionContainer {
+  width: 50%;
+}
+.activeSection {
+  height: 100%;
+  margin-left: 10%;
+}
+.desktopView {
+  height: 100%;
+}
+.mobileView {
+  display: none;
+}
+.square {
+  margin-right: 10px;
+  height: 22px;
+  width: 22px;
+  border: 2px solid $dark-color;
+  box-shadow: 0px 4px 4px $shadow-color;
+}
+.clickedGreenSquare {
+  background-color: $green-color;
+}
+.clickedPinkSquare {
+  background-color: $violet-color;
+}
+.clickedOrangeSquare {
+  background-color: $orange-color;
+}
+button {
+  @include button(50%);
+}
+// 1300px - 1700px
+@media only screen and (max-width: 1700px) {
+  .mainSection {
+    h1 {
+      @include header1_1700();
+    }
+  }
+  .description {
+    @include text_1700();
+  }
+  .navButton {
+    li {
+      @include header3_1700();
+    }
+  }
+  .mobileView {
+    margin: 4vh 0vw 4vh 0vw;
+    h2 {
+      @include header2_1700();
+    }
+  }
+}
+
+// 900px - 1300px
+@media only screen and (max-width: 1300px) {
+  .home {
+    @include containerStyle(150px 0px 8% 0px, column);
+    margin-right: auto;
+    margin-left: auto;
+    width: 50%;
+  }
+  .mainSection {
+    width: 100%;
+    h1 {
+      @include header1_1300();
+      @include uniHeader12(center);
+    }
+  }
+  .description {
+    @include text_1300();
+    @include uniText(center);
+  }
+  .navButton {
+    li {
+      @include header3_1300();
+    }
+  }
+  .buttonSection {
+    display: none;
+  }
+  .activeSectionContainer {
+    width: 100%;
+  }
+  .activeSection {
+    width: 100%;
+    margin-left: 0px;
+  }
+  .desktopView {
+    display: none;
+  }
+  .mobileView {
+    display: block;
+    h2 {
+      @include header2_1300();
+      @include uniHeader12(center);
+    }
+  }
+  button {
+    @include button(100%);
+  }
+}
+
+// 600px - 900px
+@media only screen and (max-width: 900px) {
+  .mainSection {
+    h1 {
+      @include header1_900();
+    }
+  }
+  .description {
+    @include text_900();
+  }
+  .navButton {
+    li {
+      @include header3_900();
+    }
+  }
+  .desktopView {
+    display: none;
+  }
+  .mobileView {
+    h2 {
+      @include header2_900();
+    }
+  }
+}
+// 450px - 600px
+@media only screen and (max-width: 600px) {
+  .mainSection {
+    h1 {
+      @include header1_600();
+    }
+  }
+  .description {
+    @include text_600();
+  }
+  .navButton {
+    li {
+      @include header3_600();
+    }
+  }
+  .mobileView {
+    h2 {
+      @include header2_600();
+    }
+  }
+}
+// 0px -450px
+@media only screen and (max-width: 450px) {
+  .mainSection {
+    h1 {
+      @include header1_450();
+    }
+  }
+  .description {
+    @include text_450();
+  }
+  .navButton {
+    li {
+      @include header3_450();
+    }
+  }
+  .mobileView {
+    h2 {
+      @include header2_450();
+    }
+  }
+}

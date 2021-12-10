@@ -1,0 +1,84 @@
+@import "../../variables/variables.scss";
+
+.contactContainer {
+  margin-bottom: auto;
+  margin-top: auto;
+  h3 {
+    @include header3();
+    @include uniHeader34(right,none);
+  }
+  h4 {
+    @include header4();
+    @include uniHeader34(right,none);
+  }
+}
+.contactTextSection {
+  margin-bottom: 40px;
+  :first-child {
+    text-decoration: underline;
+    text-decoration-style: solid;
+    text-decoration-color: $violet-color;
+    text-decoration-thickness: 5px;
+  }
+}
+
+// TEXT - 1300px - 1700px
+@media only screen and (max-width: 1700px) {
+  .contactContainer {
+    h3 {
+      @include header3_1700();
+    }
+    h4 {
+      @include header4_1700();
+    }
+  }
+}
+
+// TEXT - 900px - 1300px
+@media only screen and (max-width: 1300px) {
+  .contactContainer {
+    margin: 4vh 0vw 4vh 0vw;
+    h3 {
+      @include header3_1300();
+    }
+    h4 {
+      @include header4_1300();
+    }
+  }
+}
+
+// TEXT - 600px - 900px
+@media only screen and (max-width: 900px) {
+  .contactContainer {
+    h3 {
+      @include header3_900();
+    }
+    h4 {
+      @include header4_900();
+    }
+  }
+}
+
+// TEXT - 450px - 600px
+@media only screen and (max-width: 600px) {
+  .contactContainer {
+    h3 {
+      @include header3_600();   
+    }
+    h4 {
+      @include header4_600();   
+    }
+  }
+}
+
+// TEXT - 0px - 450px
+@media only screen and (max-width: 450px) {
+  .contactContainer {
+    h3 {
+      @include header3_450(); 
+    }
+    h4 {
+      @include header4_450(); 
+    }
+  }
+}

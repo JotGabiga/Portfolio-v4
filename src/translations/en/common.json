@@ -1,0 +1,27 @@
+{
+    "welcome": {
+        "title": "Hi! I am Justyna Gabiga"
+    },
+    "description": {
+        "part1": "I’m a beginner Frontend developer excited to build, develop, and create.Currently switching careers from an Architect into Frontend developer. I've been learning frontend programming for two years. In April 2021, I graduated from a Web programming course with",
+        "part2": "to further deepen my programming skills. I am an enthusiastic and a social person who loves to take up new challenges and learn new skills. I'm also passionate about UX/UI design and the craft of building beautiful and accessible experiences that meet users needs. From my previous professional experience I can bring a technical flair, a passion for taking care of the visual side of the project and good organization skills."
+    },
+    "navigation": {
+        "skills": "Skills",
+        "portfolio": "Portfolio",
+        "contact": "Contact"
+    },
+    "button": {
+        "cv": "Download CV"
+    },
+    "contact": {
+        "phone": "phone:",
+        "phoneNumber": "+48 783001534"
+    },
+    "project": {
+        "title": "Bookcrossing",
+        "description": "Virtual library",
+        "frontendStack": "React + Firebase + Sass",
+        "backendStack": "Node.js + MongoDb + Heroku"
+    }
+}

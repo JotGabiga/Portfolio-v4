@@ -1,0 +1,181 @@
+// MAIN CONTAINER STYLE
+@mixin containerStyle($padding, $flex-direction) {
+  padding: $padding;
+  margin: 0px 15% 0px 15%;
+  display: flex;
+  flex-direction: $flex-direction;
+}
+
+// COLORS
+$basic-color: #f7edeb;
+$dark-color: #503659;
+$green-color: rgba(201, 255, 11, 1);
+$violet-color: #b577f6;
+$orange-color: #ff5c00;
+$shadow-color: rgba(0, 0, 0, 0.25);
+$dark-filter: invert(21%) sepia(6%) saturate(3960%) hue-rotate(240deg)
+  brightness(96%) contrast(88%);
+
+// FONTS
+$header-font-family: "Rubik", sans-serif;
+$text-font-family: "Rubik", sans-serif;
+
+// TEXT
+@mixin uniHeader12($text-align) {
+  font-family: $header-font-family;
+  font-weight: bold;
+  text-align: $text-align;
+  color: $dark-color;
+  margin: 0vh 0vw 3.5vh 0vw;
+}
+@mixin uniHeader34($text-align, $text-transform) {
+  font-family: $header-font-family;
+  font-weight: bold;
+  text-align: $text-align;
+  color: $dark-color;
+  margin: 0.3vh 0vw 0.3vh 0vw;
+  text-transform: $text-transform;
+}
+@mixin uniText($text-align) {
+  font-family: $text-font-family;
+  text-align: $text-align;
+  color: $dark-color;
+  margin: 0vh 0vw 3.54vh 0vw;
+}
+
+// TEXT - Full screen
+
+@mixin header1() {
+  font-size: 4rem;
+}
+@mixin header2() {
+  font-size: 2.5rem;
+}
+@mixin header3() {
+  font-size: 1.5rem;
+}
+@mixin header4() {
+  font-size: 1.25rem;
+}
+@mixin text() {
+  font-size: 1.1rem;
+}
+
+// TEXT - 1300px - 1700px
+@mixin header1_1700() {
+  font-size: 3rem;
+}
+@mixin header2_1700() {
+  font-size: 1.5rem;
+}
+@mixin header3_1700() {
+  font-size: 1.5rem;
+}
+@mixin header4_1700() {
+  font-size: 1.25rem;
+}
+@mixin text_1700() {
+  font-size: 1rem;
+}
+
+// TEXT - 900px - 1300px
+@mixin header1_1300() {
+  font-size: 3.5rem;
+}
+@mixin header2_1300() {
+  font-size: 1.5rem;
+}
+@mixin header3_1300() {
+  font-size: 1.25rem;
+}
+@mixin header4_1300() {
+  font-size: 1.1rem;
+}
+@mixin text_1300() {
+  font-size: 1rem;
+}
+
+// TEXT - 600px - 900px
+
+@mixin header1_900() {
+  font-size: 3rem;
+}
+@mixin header2_900() {
+  font-size: 1.5rem;
+}
+@mixin header3_900() {
+  font-size: 1.2rem;
+}
+@mixin header4_900() {
+  font-size: 1rem;
+}
+@mixin text_900() {
+  font-size: 1rem;
+}
+
+// TEXT - 450px - 600px
+
+@mixin header1_600() {
+  font-size: 3rem;
+}
+@mixin header2_600() {
+  font-size: 1.75rem;
+}
+@mixin header3_600() {
+  font-size: 1.25rem;
+}
+@mixin header4_600() {
+  font-size: 0.95rem;
+}
+@mixin text_600() {
+  font-size: 1rem;
+}
+
+// TEXT - 0px - 450px
+
+@mixin header1_450() {
+  font-size: 2.5rem;
+}
+@mixin header2_450() {
+  font-size: 1.75rem;
+}
+@mixin header3_450() {
+  font-size: 1rem;
+}
+@mixin header4_450() {
+  font-size: 0.85em;
+}
+@mixin text_450() {
+  font-size: 1rem;
+}
+
+// BUTTON
+@mixin button($width) {
+  font-family: $header-font-family;
+  font-size: 80%;
+  font-weight: bold;
+  text-align: center;
+  color: $dark-color;
+  margin: 0vh 0vw 0vh 0vw;
+  text-transform: uppercase;
+  width: $width;
+  height: 5vh;
+  border: 1px solid $dark-color;
+  box-shadow: 0px 4px 4px $shadow-color;
+  background-color: rgba(0, 0, 0, 0);
+  text-decoration: none;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+//    NAVIGATION
+@mixin navigationButton($margin) {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  text-transform: uppercase;
+  margin: $margin;
+  list-style: none;
+  display: inline-block;
+}

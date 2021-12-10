@@ -1,0 +1,31 @@
+{
+    "welcome": {
+        "title": "Cześć, jestem Justyna Gabiga"
+    },
+    "description": {
+        "part1": "Jestem początkującym Front End developerem, który uwielbia tworzyć kod. Do tej pory pracowałam jako architekt i architekt wnętrz. Obecnie chcę pokierować swoje życie zawodowe w kierunku programowania Front End, dlatego uczę się programowania od dwóch lat. W kwietniu 2021 ukończyłam z wyróżnieniem kurs organizowany przez Studenckie Stowarzyszenie",
+        "part2": "Jestem entuzjastyczną, otwartą osobą. Uwielbiam zdobywać nowe umiejętności i podejmować nowe wyzwania. Poza tym interesuję się UX/UI designem oraz tworzeniem  pięknych i przystępnych doświadczeń, które spełniają potrzeby użytkowników. Z mojego dotychczasowego doświadczenia zawodowego mogę wnieść zacięcie techniczne, pasję do wizualnej strony projektu oraz świetne umiejętności organizacyjne."
+    },
+    "navigation": {
+        "skills": "Umiejętności",
+        "portfolio": "Projekty",
+        "contact": "Kontakt"
+    },
+    "button": {
+        "cv": "Pobierz CV"
+    },
+    "contact": {
+        "phone": "telefon:",
+        "phoneNumber": "+48 783001534"
+    },
+    "project": {
+        "title": "Bookcrossing",
+        "description": "Wirtualna biblioteka",
+        "frontendStack": "React + Firebase + Sass",
+        "backendStack": "Node.js + MongoDb + Heroku"
+    }
+}
+
+
+
+
