@@ -16,64 +16,64 @@ import ux from "./assets/design-thinking.svg";
 const SkillSection = (props) => {
   return (
     <section className="wrapper">
-      <div className="skillIcon strong">
+      <div className="skillIcon">
         <img src={htmlGraphic} alt="html icon" />
-        <h3 className="skillName">Html 5</h3>
+        <h3>Html 5</h3>
       </div>
 
-      <div className="skillIcon strong">
+      <div className="skillIcon">
         <img src={cssGraphic} alt="css icon" />
-        <h3 className="skillName">Css 3</h3>
+        <h3>Css 3</h3>
       </div>
 
-      <div className="skillIcon medium">
+      <div className="skillIcon">
         <img src={sassGraphic} alt="sass icon" />
-        <h3 className="skillName">Sass</h3>
+        <h3>Sass</h3>
       </div>
 
-      <div className="skillIcon medium">
+      <div className="skillIcon">
         <img src={javaScriptGraphic} alt="javascript  icon" />
-        <h3 className="skillName">Java Script</h3>
+        <h3>Java Script</h3>
       </div>
 
-      <div className="skillIcon medium">
+      <div className="skillIcon">
         <img src={reactGraphic} alt="react icon" />
-        <h3 className="skillName">React</h3>
+        <h3>React</h3>
       </div>
 
-      <div className="skillIcon weak">
+      <div className="skillIcon">
         <img src={nodejsGraphic} alt="react icon" />
-        <h3 className="skillName">Node.js</h3>
+        <h3>Node.js</h3>
       </div>
 
-      <div className="skillIcon medium">
+      <div className="skillIcon">
         <img src={gitHubGraphic} alt="github icon" />
-        <h3 className="skillName">Github</h3>
+        <h3>Github</h3>
       </div>
 
-      <div className="skillIcon medium">
+      <div className="skillIcon">
         <img src={figmaGraphic} alt="figma icon" />
-        <h3 className="skillName">Figma</h3>
+        <h3>Figma</h3>
       </div>
 
-      <div className="skillIcon weak">
+      <div className="skillIcon">
         <img src={mongodbGraphic} alt="figma icon" />
-        <h3 className="skillName">MongoDb</h3>
+        <h3>MongoDb</h3>
       </div>
 
-      <div className="skillIcon weak">
+      <div className="skillIcon">
         <img src={herokuGraphic} alt="figma icon" />
-        <h3 className="skillName">Heroku</h3>
+        <h3>Heroku</h3>
       </div>
 
-      <div className="skillIcon weak">
+      <div className="skillIcon">
         <img src={firebaseGraphic} alt="figma icon" />
-        <h3 className="skillName">Firebase</h3>
+        <h3>Firebase</h3>
       </div>
 
-      <div className="skillIcon strong">
+      <div className="skillIcon">
         <img src={ux} alt="figma icon" />
-        <h3 className="skillName">UI/UX</h3>
+        <h3>UI/UX</h3>
       </div>
     </section>
   );

@@ -3,7 +3,7 @@
 .wrapper {
   height: 100%;
   display: grid;
-  grid-template-columns: repeat(3, minmax(150px, 1fr));
+  grid-template-columns: repeat(3, minmax(155px, 1fr));
   grid-template-rows: 25% repeat(auto-fit, 25%, 25%, 25%, 25%) 25%;
   grid-gap: 1.3em;
 }
@@ -14,6 +14,9 @@
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
+  border: 3px solid $medium-color;
+  box-shadow: 0px 3px 3px $shadow-color;
+
   img {
     width: 60px;
     height: 60px;
@@ -21,13 +24,12 @@
     padding: 10px 10px 10px 10px;
     z-index: 0;
     &:hover {
-      filter: invert(55%) sepia(50%) saturate(7486%) hue-rotate(1deg)
-        brightness(103%) contrast(107%);
+      filter: $orange-filter;
     }
   }
   h3 {
-    @include uniHeader34(center, uppercase);
-    @include header3();
+    @include buttonText();
+    @include  uniHeader34(center, uppercase);
     &:hover {
       color: $orange-color;
     }
@@ -36,24 +38,12 @@
     border: 3px solid $orange-color;
   }
 }
-.strong {
-  border: 4px solid $dark-color;
-  box-shadow: 0px 6px 6px $shadow-color;
-}
-.medium {
-  border: 3px solid $dark-color;
-  box-shadow: 0px 3px 3px $shadow-color;
-}
-.weak {
-  border: 2px solid $dark-color;
-  box-shadow: 0px 1px 1px $shadow-color;
-}
 
 // 1300px - 1700px
 @media only screen and (max-width: 1700px) {
   .skillIcon {
     h3 {
-      @include header3_1700();
+      @include buttonText_1700();
     }
   }
 }
@@ -80,7 +70,7 @@
     align-items: center;
     height: 100%;
     h3 {
-      @include header3_1300();
+      @include buttonText_1300();
     }
     img {
       padding: 0px 0px 0px 0px;
@@ -97,7 +87,7 @@
   }
   .skillIcon {
     h3 {
-      @include header3_900();
+      @include buttonText_900();
     }
   }
 }
@@ -112,7 +102,7 @@
       padding: 10px 10px 10px 10px;
     }
     h3 {
-      @include header3_600();
+      @include buttonText_600();
     }
   }
 }
@@ -120,15 +110,16 @@
 // 0px - 450px
 @media only screen and (max-width: 450px) {
   .wrapper {
-    grid-template-columns: repeat(1, minmax(40px, 1fr));
+    grid-template-columns: repeat(2, minmax(30px, 1fr));
+    grid-gap: 0.3em;
   }
   .skillIcon {
     h3 {
-      @include header3_450();
+      @include buttonText_450();
     }
     img {
-      width: 60px;
-      height: 60px;
+      width: 40px;
+      height: 40px;
       padding: 10px 10px 10px 10px;
     }
   }

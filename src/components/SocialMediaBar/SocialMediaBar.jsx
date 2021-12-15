@@ -7,7 +7,7 @@ import globe from "./assets/globe-europe-solid(1).svg";
 
 const SocialMediaBar = (props) => {
   const [lang, setLang] = useState("pl");
-  let [t,i18n] = useTranslation("common");
+  let [t, i18n] = useTranslation("common");
   let changeLang = (lng) => {
     lang === "en" ? setLang("pl") : setLang("en");
     i18n.changeLanguage(lng);
@@ -15,17 +15,21 @@ const SocialMediaBar = (props) => {
   return (
     <section className="socialMediaBar">
       <section className="socialLinks">
-        <a href="https://www.linkedin.com/in/justyna-gabiga-187388172/">
+        <a
+          href="https://www.linkedin.com/in/justyna-gabiga-187388172/"
+          target="_blank"
+          rel="noreferrer"
+        >
           <img src={linkedIn} alt="linkedin icon"></img>
         </a>
-        <a href="https://github.com/JotGabiga">
+        <a href="https://github.com/JotGabiga" target="_blank" rel="noreferrer">
           <img src={github} alt="github  icon"></img>
         </a>
         <div>
           <div className="changeLanguage" onClick={() => changeLang(lang)}>
-          <img src={globe} alt="changeLanguage"></img>
-            <h4>{lang}</h4>
+            <img src={globe} alt="changeLanguage"></img>
           </div>
+          <h4>{lang}</h4>
         </div>
       </section>
     </section>

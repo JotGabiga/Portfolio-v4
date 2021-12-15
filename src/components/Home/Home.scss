@@ -1,10 +1,36 @@
 @import "../../variables/variables.scss";
+.skillsActive{
+  white-space: pre-wrap;
+  ::selection {
+    color: rgb(255, 255, 255);
+    background: $orange-color;
+  }
+}
+.portfolioActive{
+  ::selection {
+    color: rgb(255, 255, 255);
+    background: $green-color;
+  }
+}
+.contactActive{
+  ::selection {
+    color: rgb(255, 255, 255);
+    background: $violet-color;
+  }
+}
+.test2{
+  ::selection {
+    color: rgb(255, 0, 0);
+    background: $orange-color;
+  }
+}
 .mainContainer{
+ 
   height: 100vh;
 }
 .home {
   height: calc(100vh - 30%);
-  @include containerStyle(150px 0px 7% 0px, row);
+  @include containerStyle(150px 0px 7% 0px, row, 0px 15% 0px 15%);
 }
 .mainSection {
   display: flex;
@@ -75,6 +101,8 @@
 }
 button {
   @include button(50%);
+  @include buttonText();
+  @include uniHeader34(center,uppercase);
 }
 // 1300px - 1700px
 @media only screen and (max-width: 1700px) {
@@ -97,15 +125,18 @@ button {
       @include header2_1700();
     }
   }
+  button {
+    @include buttonText_1700();
+  }
 }
 
 // 900px - 1300px
 @media only screen and (max-width: 1300px) {
   .home {
-    @include containerStyle(150px 0px 8% 0px, column);
+    @include containerStyle(150px 0px 8% 0px, column, 0px 12% 0px 12%);
     margin-right: auto;
     margin-left: auto;
-    width: 50%;
+    width: 70%;
   }
   .mainSection {
     width: 100%;
@@ -145,6 +176,7 @@ button {
   }
   button {
     @include button(100%);
+    @include buttonText_1300();
   }
 }
 
@@ -171,6 +203,9 @@ button {
       @include header2_900();
     }
   }
+  button {
+    @include buttonText_900();
+  }
 }
 // 450px - 600px
 @media only screen and (max-width: 600px) {
@@ -192,6 +227,9 @@ button {
       @include header2_600();
     }
   }
+  button {
+    @include buttonText_600();
+  }
 }
 // 0px -450px
 @media only screen and (max-width: 450px) {
@@ -212,5 +250,8 @@ button {
     h2 {
       @include header2_450();
     }
+  }
+  button {
+    @include buttonText_450();
   }
 }

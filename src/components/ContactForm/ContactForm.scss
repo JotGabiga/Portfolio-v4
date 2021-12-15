@@ -1,19 +1,29 @@
 @import "../../variables/variables.scss";
 
 .contactContainer {
-  margin-bottom: auto;
-  margin-top: auto;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  img {
+    width: 70%;
+    margin: 0vh 0vw 5vh 0vw;
+    border: 1px solid $dark-color;
+    box-shadow: 0px 4px 4px $shadow-color;
+  }
+  h2{
+    @include header2();
+    @include uniHeader12(right);
+  }
   h3 {
     @include header3();
-    @include uniHeader34(right,none);
+    @include uniHeader34(right, none);
   }
   h4 {
     @include header4();
-    @include uniHeader34(right,none);
+    @include uniHeader34(right, none);
   }
 }
 .contactTextSection {
-  margin-bottom: 40px;
   :first-child {
     text-decoration: underline;
     text-decoration-style: solid;
@@ -37,12 +47,15 @@
 // TEXT - 900px - 1300px
 @media only screen and (max-width: 1300px) {
   .contactContainer {
+    text-align: center;
     margin: 4vh 0vw 4vh 0vw;
     h3 {
       @include header3_1300();
+      @include uniHeader34(center, none);
     }
     h4 {
       @include header4_1300();
+      @include uniHeader34(center, none);
     }
   }
 }
@@ -50,6 +63,9 @@
 // TEXT - 600px - 900px
 @media only screen and (max-width: 900px) {
   .contactContainer {
+    img {
+      width: 100%;
+    }
     h3 {
       @include header3_900();
     }
@@ -63,10 +79,10 @@
 @media only screen and (max-width: 600px) {
   .contactContainer {
     h3 {
-      @include header3_600();   
+      @include header3_600();
     }
     h4 {
-      @include header4_600();   
+      @include header4_600();
     }
   }
 }
@@ -75,10 +91,10 @@
 @media only screen and (max-width: 450px) {
   .contactContainer {
     h3 {
-      @include header3_450(); 
+      @include header3_450();
     }
     h4 {
-      @include header4_450(); 
+      @include header4_450();
     }
   }
 }

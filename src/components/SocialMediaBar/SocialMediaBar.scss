@@ -19,6 +19,9 @@
     filter: $dark-filter;
     margin: 10px 0px 10px 0px;
   }
+  img:hover{
+    filter: invert(31%) sepia(11%) saturate(9%) hue-rotate(326deg) brightness(103%) contrast(99%);
+  }
   h3 {
     @include text();
     @include uniText(center);
@@ -27,18 +30,18 @@
 .changeLanguage {
   display: flex;
   flex-direction: column;
-  h4 {
-    @include uniHeader34(center, uppercase);
-    font-size: 1rem;
-  }
   :hover {
     cursor: pointer;
+    color: $darker-color;
   }
   img {
     margin: 0px;
   }
 }
-
+h4 {
+  @include uniHeader34(center, uppercase);
+  font-size: 1rem;
+}
 @media only screen and (max-width: 900px) {
   .socialMediaBar {
     width: 100%;

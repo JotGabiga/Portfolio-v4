@@ -3,8 +3,15 @@
         "title": "Cześć, jestem Justyna Gabiga"
     },
     "description": {
-        "part1": "Jestem początkującym Front End developerem, który uwielbia tworzyć kod. Do tej pory pracowałam jako architekt i architekt wnętrz. Obecnie chcę pokierować swoje życie zawodowe w kierunku programowania Front End, dlatego uczę się programowania od dwóch lat. W kwietniu 2021 ukończyłam z wyróżnieniem kurs organizowany przez Studenckie Stowarzyszenie",
-        "part2": "Jestem entuzjastyczną, otwartą osobą. Uwielbiam zdobywać nowe umiejętności i podejmować nowe wyzwania. Poza tym interesuję się UX/UI designem oraz tworzeniem  pięknych i przystępnych doświadczeń, które spełniają potrzeby użytkowników. Z mojego dotychczasowego doświadczenia zawodowego mogę wnieść zacięcie techniczne, pasję do wizualnej strony projektu oraz świetne umiejętności organizacyjne."
+            "part1": "Jestem początkującym Front End developerem z pasją do tworzenia i",
+            "part8": "rozwijania kodu. Dotychczas pracowałam jako architekt, obecnie szukam pierwszej pracy jako Front End developer. ",
+            "part2": "Od dwóch lat uczę się programowania.",
+            "part3": " W kwietniu 2021 ukończyłam z wyróżnieniem otwarty kurs programowania organizowany przez Stowarzyszenie Studenckie ",
+            "part4": ".",
+            "part5": " Poza tym rozpoczęłam pracę w zespole IT ",
+            "part6": "Jestem entuzjastyczną i towarzyską osobą, uwielbiam się uczyć oraz podejmować nowych zadań.",
+            "part7": " Z mojego dotychczasowego doświadczenia zawodowego wniosę zacięcie techniczne, dokładność oraz wyczucie estetyki.",
+            "title": "Studenckiego Festiwalu Informatycznego"
     },
     "navigation": {
         "skills": "Umiejętności",
@@ -15,6 +22,7 @@
         "cv": "Pobierz CV"
     },
     "contact": {
+        "title":"Chętnie odpowiem na pytania",
         "phone": "telefon:",
         "phoneNumber": "+48 783001534"
     },
@@ -22,7 +30,8 @@
         "title": "Bookcrossing",
         "description": "Wirtualna biblioteka",
         "frontendStack": "React + Firebase + Sass",
-        "backendStack": "Node.js + MongoDb + Heroku"
+        "backendStack": "Node.js + MongoDb + Heroku",
+        "text": "Aplikacja została przygotowana jako MVP. Służy do zarządzania domową biblioteką oraz wymianą książek ze znajomymi. Aplikacja została stworzona w celach edukacyjnych, głównie po to abym mogła utrwalić moją wiedzę na temat technologii Front End i Back End. W projekcie użyłam frameworku React wraz z komponentami funkcyjnymi. Projekt został wdrożony przy użyciu platformy Firebase. Część Back Endowa projektu opiera się na nierelacyjnej bazie danych Mongodb i została wdrożona na platformie Heroku. Połączenie z bazą danych wykonałam przy pomocy Back Endowej aplikacji napisanej w Node.js, przy użyciu której Frond End integruje się z bazą danych poprzez API. Więcej informacji na temat projektu można znaleźć w moim repozytorium na GitHubie pod nazwą `BookcrossingApp` w pliku ReadeMe."
     }
 }
 
