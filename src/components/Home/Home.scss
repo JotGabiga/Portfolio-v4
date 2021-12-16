@@ -206,9 +206,6 @@ button {
 
 // 600px - 900px
 @media only screen and (max-width: 900px) {
-  .home {
-    @include containerStyle(20% 0vw 7% 0vh, column, 0vh 12% 0vh 12%);
-  }
   .mainSection {
     h1 {
       @include header1_900();
