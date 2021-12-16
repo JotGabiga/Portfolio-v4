@@ -1,6 +1,5 @@
 @import "../../variables/variables.scss";
 .skillsActive{
-  white-space: pre-wrap;
   ::selection {
     color: rgb(255, 255, 255);
     background: $orange-color;
@@ -30,7 +29,8 @@
 }
 .home {
   height: calc(100vh - 30%);
-  @include containerStyle(150px 0px 7% 0px, row, 0px 15% 0px 15%);
+  // min-height: calc(100vh - 30%);
+  @include containerStyle(7% 0vw 7% 0vh, row, 0vh 15% 0vh 15%);
 }
 .mainSection {
   display: flex;
@@ -133,7 +133,7 @@ button {
 // 900px - 1300px
 @media only screen and (max-width: 1300px) {
   .home {
-    @include containerStyle(150px 0px 8% 0px, column, 0px 12% 0px 12%);
+    @include containerStyle(7% 0vw 7% 0vh,column, 0vh 12% 0vh 12%);
     margin-right: auto;
     margin-left: auto;
     width: 70%;
@@ -182,6 +182,9 @@ button {
 
 // 600px - 900px
 @media only screen and (max-width: 900px) {
+  .home{
+    @include containerStyle(20% 0vw 7% 0vh, column, 0vh 12% 0vh 12%);
+  }
   .mainSection {
     h1 {
       @include header1_900();

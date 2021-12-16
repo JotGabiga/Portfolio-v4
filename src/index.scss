@@ -1,7 +1,12 @@
 @import "variables/variables.scss";
 body {
   height: 100%;
-   background-color: $basic-color;
-   margin:0px;
-  }
-
+  background-color: $basic-color;
+  margin: 0px;
+}
+.root {
+  height: 100%;
+}
+.js-focus-visible{
+  min-height: 100vh;
+}

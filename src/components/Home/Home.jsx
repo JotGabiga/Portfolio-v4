@@ -4,7 +4,7 @@ import "./Home.scss";
 import Portfolio from "../Portfolio/Portfolio";
 import SkillSection from "../SkillSection/SkillSection";
 import ContactForm from "../ContactForm/ContactForm";
-import SocialMediaBar from "../SocialMediaBar/SocialMediaBar";
+
 import cv from "./assets/CV_JustynaGabiga.pdf";
 import ScrollButton from "../ScrollButton/ScrollButton";
 import { useTranslation } from "react-i18next";
@@ -18,9 +18,8 @@ const Home = (props) => {
   };
   return (
     <section className="mainContainer" className={state}>
-      <SocialMediaBar></SocialMediaBar>
       <section className="home">
-        <section className="mainSection">
+        <section className="mainSection" >
           <div className="up">
             <h1>{t("welcome.title")}</h1>
             <div className="description">

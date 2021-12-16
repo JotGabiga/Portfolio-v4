@@ -34,7 +34,9 @@ const Portfolio = (props) => {
         <h4>{t("project.backendStack")}</h4>
       </div>
       <div className="dropdown">
-        <button className="dropdownIcon">Dowiedz się więcej</button>
+        <button className="dropdownIcon">
+        {t("project.moreInfo")}
+          </button>
         <div class="dropdown-content">
           <strong>{t("project.text")}</strong>
         </div>

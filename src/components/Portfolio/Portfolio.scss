@@ -106,6 +106,9 @@
       @include header4_1300();
     }
   }
+  .overlay {
+    display:none;
+  }
   .dropdown {
     width: 100%;
     position: relative;
@@ -129,7 +132,7 @@
     color: $darker-color;
     background-color: $basic-color;
     position: absolute;
-    margin: 0px;
+    margin: 0vh 0vw 4vh 0vw;
     border: 1px solid $dark-color;
     box-shadow: 0px 4px 4px $shadow-color;
     padding: 12px 16px;
