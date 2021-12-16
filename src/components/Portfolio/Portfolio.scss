@@ -107,7 +107,7 @@
     }
   }
   .overlay {
-    display:none;
+    display: none;
   }
   .dropdown {
     width: 100%;
@@ -138,7 +138,6 @@
     padding: 12px 16px;
     z-index: 1;
   }
-
   .dropdown:hover .dropdown-content {
     display: block;
     margin-top: 20px;
@@ -155,6 +154,9 @@
       @include header4_900();
     }
   }
+  .dropdown-content {
+    @include text_900();
+  }
 }
 
 // TEXT - 450px - 600px
@@ -167,6 +169,9 @@
       @include header4_600();
     }
   }
+  .dropdown-content {
+    @include text_900();
+  }
 }
 
 // TEXT - 0px - 450px
@@ -178,5 +183,8 @@
     h4 {
       @include header4_450();
     }
+  }
+  .dropdown-content {
+    @include text_450();
   }
 }
