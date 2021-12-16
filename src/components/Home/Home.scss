@@ -1,30 +1,48 @@
 @import "../../variables/variables.scss";
-.skillsActive{
+.skillsActive {
   ::selection {
     color: rgb(255, 255, 255);
     background: $orange-color;
   }
+
+  .home .mainSection .up .description {
+    a:hover {
+      color: $orange-color;
+    }
+    a:active {
+      color: $orange-color;
+    }
+  }
 }
-.portfolioActive{
+.portfolioActive {
   ::selection {
     color: rgb(255, 255, 255);
     background: $green-color;
   }
+  .home .mainSection .up .description {
+    a:hover {
+      color: $green-color;
+    }
+    a:active {
+      color: $green-color;
+    }
+  }
 }
-.contactActive{
+.contactActive {
   ::selection {
     color: rgb(255, 255, 255);
     background: $violet-color;
   }
-}
-.test2{
-  ::selection {
-    color: rgb(255, 0, 0);
-    background: $orange-color;
+  .home .mainSection .up .description {
+    a:hover {
+      color: $violet-color;
+    }
+    a:active {
+      color: $violet-color;
+    }
   }
 }
-.mainContainer{
- 
+.mainContainer {
   height: 100vh;
 }
 .home {
@@ -54,6 +72,12 @@
 .description {
   @include text();
   @include uniText(left);
+  a:link {
+    color: $darker-color;
+  }
+  a:visited {
+    color: $medium-color;
+  }
 }
 .buttonSection {
   display: flex;
@@ -102,7 +126,7 @@
 button {
   @include button(50%);
   @include buttonText();
-  @include uniHeader34(center,uppercase);
+  @include uniHeader34(center, uppercase);
 }
 // 1300px - 1700px
 @media only screen and (max-width: 1700px) {
@@ -133,7 +157,7 @@ button {
 // 900px - 1300px
 @media only screen and (max-width: 1300px) {
   .home {
-    @include containerStyle(7% 0vw 7% 0vh,column, 0vh 12% 0vh 12%);
+    @include containerStyle(7% 0vw 7% 0vh, column, 0vh 12% 0vh 12%);
     margin-right: auto;
     margin-left: auto;
     width: 70%;
@@ -182,7 +206,7 @@ button {
 
 // 600px - 900px
 @media only screen and (max-width: 900px) {
-  .home{
+  .home {
     @include containerStyle(20% 0vw 7% 0vh, column, 0vh 12% 0vh 12%);
   }
   .mainSection {
