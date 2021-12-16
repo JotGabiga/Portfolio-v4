@@ -28,9 +28,13 @@ const SocialMediaBar = (props) => {
         <div>
           <div className="changeLanguage" onClick={() => changeLang(lang)}>
             <img src={globe} alt="changeLanguage"></img>
+            <h4>{lang}</h4>
           </div>
-          <div className="changeLanguageMobile" onClick={() => changeLang(lang)}>
-          <h4>{lang}</h4>
+          <div
+            className="changeLanguageMobile"
+            onClick={() => changeLang(lang)}
+          >
+            <h4>{lang}</h4>
           </div>
         </div>
       </section>
