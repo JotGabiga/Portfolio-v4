@@ -16,12 +16,11 @@
   img {
     width: 26px;
     height: 26px;
-    filter: $dark-filter;
+    filter: $medium-filter;
     margin: 10px 0px 10px 0px;
   }
   img:hover {
-    filter: invert(31%) sepia(11%) saturate(9%) hue-rotate(326deg)
-      brightness(103%) contrast(99%);
+    filter: $dark-filter;
   }
   h3 {
     @include text();

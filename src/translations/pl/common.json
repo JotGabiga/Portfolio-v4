@@ -3,8 +3,8 @@
         "title": "Cześć, jestem Justyna Gabiga"
     },
     "description": {
-            "part1": "Jestem początkującym Front End developerem z pasją do tworzenia i",
-            "part8": "rozwijania kodu. Dotychczas pracowałam jako architekt, obecnie szukam pierwszej pracy jako Front End developer. ",
+            "part1": "Jestem początkującym Frontend developerem z pasją do tworzenia i",
+            "part8": "rozwijania kodu. Dotychczas pracowałam jako architekt, obecnie szukam pierwszej pracy jako Frontend developer. ",
             "part2": "Od dwóch lat uczę się programowania.",
             "part3": " W kwietniu 2021 ukończyłam z wyróżnieniem otwarty kurs programowania organizowany przez Stowarzyszenie Studenckie ",
             "part4": ".",
@@ -31,7 +31,7 @@
         "description": "Wirtualna biblioteka",
         "frontendStack": "React + Firebase + Sass",
         "backendStack": "Node.js + MongoDb + Heroku",
-        "text": "Aplikacja została przygotowana jako MVP. Służy do zarządzania domową biblioteką oraz wymianą książek ze znajomymi. Aplikacja została stworzona w celach edukacyjnych, głównie po to abym mogła utrwalić moją wiedzę na temat technologii Front End i Back End. W projekcie użyłam frameworku React wraz z komponentami funkcyjnymi. Projekt został wdrożony przy użyciu platformy Firebase. Część Back Endowa projektu opiera się na nierelacyjnej bazie danych Mongodb i została wdrożona na platformie Heroku. Połączenie z bazą danych wykonałam przy pomocy Back Endowej aplikacji napisanej w Node.js, przy użyciu której Frond End integruje się z bazą danych poprzez API. Więcej informacji na temat projektu można znaleźć w moim repozytorium na GitHubie pod nazwą `BookcrossingApp` w pliku ReadeMe.",
+        "text": "Aplikacja została przygotowana jako MVP. Służy do zarządzania domową biblioteką oraz wymianą książek ze znajomymi. Aplikacja została stworzona w celach edukacyjnych, głównie po to abym mogła utrwalić moją wiedzę na temat technologii frontend i backend. W projekcie użyłam frameworku React wraz z komponentami funkcyjnymi. Projekt został wdrożony przy użyciu platformy Firebase. Część Back Endowa projektu opiera się na nierelacyjnej bazie danych Mongodb i została wdrożona na platformie Heroku. Połączenie z bazą danych wykonałam przy pomocy Back Endowej aplikacji napisanej w Node.js, przy użyciu której Frond End integruje się z bazą danych poprzez API. Więcej informacji na temat projektu można znaleźć w moim repozytorium na GitHubie pod nazwą `BookcrossingApp` w pliku ReadeMe.",
         "moreInfo": "Więcej informacji o projekcie"
     }
 }

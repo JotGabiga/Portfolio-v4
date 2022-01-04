@@ -3,8 +3,8 @@
         "title": "Hi! I am Justyna Gabiga"
     },
     "description": {
-        "part1": "I’m a beginner Front End developer excited to build, develop, and create.",
-        "part8": "Currently switching careers from an Architect into Front End developer. ",
+        "part1": "I’m a beginner Frontend developer excited to build, develop, and create.",
+        "part8": "Currently switching careers from an Architect into Frontend developer. ",
         "part2": "I've been learning frontend programming for two years. ",
         "part3": "In April 2021, I graduated with honors from an open web programming course with ",
         "part4": " Association to further deepen my programming skills. ",
@@ -31,7 +31,7 @@
         "description": "Virtual library",
         "frontendStack": "React + Firebase + Sass",
         "backendStack": "Node.js + MongoDb + Heroku",
-        "text": "Bookcrossing App is prepared as MVP. The main purpose of the application is to manage user's home library and exchange books with friends. App was created for educational purposes mainly, so that I could consolidate my knowledge of Back End and Front End technologies. I used React.js with functional components and it has been deployed on Firebase. Back End project uses non relational database - Mongodb, and it's been deployed on Heroku. The connection to the database is made in the Back End application written in Node.js which allows to integrate with Front End by API. You can find more information on this in the repository called `BookcrossingApp` on my GitHub profile in the ReadeMe file.",
+        "text": "Bookcrossing App is prepared as MVP. The main purpose of the application is to manage user's home library and exchange books with friends. App was created for educational purposes mainly, so that I could consolidate my knowledge of backend and frontend technologies. I used React.js with functional components and it has been deployed on Firebase. Back End project uses non relational database - Mongodb, and it's been deployed on Heroku. The connection to the database is made in the backend application written in Node.js which allows to integrate with frontend by API. You can find more information on this in the repository called `BookcrossingApp` on my GitHub profile in the ReadeMe file.",
         "moreInfo": "Find out more about project"
     }
 }

@@ -17,14 +17,14 @@
 .portfolioActive {
   ::selection {
     color: rgb(255, 255, 255);
-    background: $green-color;
+    background: $pink-color;
   }
   .home .mainSection .up .description {
     a:hover {
-      color: $green-color;
+      color: $pink-color;
     }
     a:active {
-      color: $green-color;
+      color: $pink-color;
     }
   }
 }
@@ -73,10 +73,10 @@
   @include text();
   @include uniText(left);
   a:link {
-    color: $medium-color;
+    color: $darker-color;
   }
   a:visited {
-    color: $medium-color;
+    color: $darker-color;
   }
 }
 .buttonSection {
@@ -115,7 +115,7 @@
   box-shadow: 0px 4px 4px $shadow-color;
 }
 .clickedGreenSquare {
-  background-color: $green-color;
+  background-color: $pink-color;
 }
 .clickedPinkSquare {
   background-color: $violet-color;
