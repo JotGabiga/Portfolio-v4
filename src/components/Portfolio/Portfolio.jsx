@@ -5,7 +5,8 @@ import downloadIcon from "./assets/external-link-alt-solid.svg";
 import { useTranslation } from "react-i18next";
 
 const Portfolio = () => {
-  const { t } = useTranslation("common");
+  // eslint-disable-next-line
+  const {  t , i18n  } = useTranslation("common");
   return (
     <section className="portfolioContainer">
       <div>

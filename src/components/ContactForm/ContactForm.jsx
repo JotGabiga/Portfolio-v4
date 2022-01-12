@@ -4,7 +4,8 @@ import { useTranslation } from "react-i18next";
 import photo from "./assets/photo.webp";
 
 const ContactForm = () => {
-  const { t } = useTranslation("common");
+  // eslint-disable-next-line
+  const {  t , i18n  } = useTranslation("common");
   return (
     <section>
       <div className="contactContainer">

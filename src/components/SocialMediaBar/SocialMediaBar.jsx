@@ -7,7 +7,8 @@ import globe from "./assets/globe-europe-solid(1).svg";
 
 const SocialMediaBar = () => {
   const [lang, setLang] = useState("pl");
-  let [i18n] = useTranslation("common");
+  // eslint-disable-next-line
+  let [ t , i18n ] = useTranslation("common");
   let changeLang = (lng) => {
     lang === "en" ? setLang("pl") : setLang("en");
     i18n.changeLanguage(lng);

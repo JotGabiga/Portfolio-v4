@@ -9,7 +9,8 @@ import ScrollButton from "../ScrollButton/ScrollButton";
 import { useTranslation } from "react-i18next";
 
 const Home = () => {
-  const { t } = useTranslation("common");
+  // eslint-disable-next-line
+  const { t , i18n } = useTranslation("common");
   const [state, setState] = useState("skillsActive");
   const setActive = (active) => {
     setState(active);
