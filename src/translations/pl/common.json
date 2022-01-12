@@ -1,6 +1,7 @@
 {
     "welcome": {
-        "title": "Cześć, jestem Justyna Gabiga"
+        "title1": "Cześć, jestem",
+        "title2": "Justyna Gabiga"
     },
     "description": {
             "part1": "Jestem początkującym Frontend developerem z pasją do tworzenia i",

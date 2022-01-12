@@ -1,11 +1,11 @@
 import React from "react";
 import "./Portfolio.scss";
-import screenshot from "./assets/homepage-search.png";
+import screenshot from "./assets/homepage-search.webp";
 import downloadIcon from "./assets/external-link-alt-solid.svg";
 import { useTranslation } from "react-i18next";
 
-const Portfolio = (props) => {
-  const { t, i18n } = useTranslation("common");
+const Portfolio = () => {
+  const { t } = useTranslation("common");
   return (
     <section className="portfolioContainer">
       <div>
@@ -16,15 +16,15 @@ const Portfolio = (props) => {
         <a
           href="https://bookcrossing-328121.web.app/"
           target="_blank"
-          rel="noreferrer"
+          rel="noopener noreferrer"
         >
           <div className="downloadIcon">
             <img src={downloadIcon} alt="Download icon" />
           </div>
           <img src={screenshot} alt="Bookcrossing Web screenschot" />
-          <div class="overlay">
-            <div class="projectDescription">
-              <strong>{t("project.text")}</strong>
+          <div className="overlay">
+            <div className="projectDescription">
+              <div>{t("project.text")}</div>
             </div>
           </div>
         </a>
@@ -34,15 +34,12 @@ const Portfolio = (props) => {
         <h4>{t("project.backendStack")}</h4>
       </div>
       <div className="dropdown">
-        <button className="dropdownIcon">
-        {t("project.moreInfo")}
-          </button>
-        <div class="dropdown-content">
-          <strong>{t("project.text")}</strong>
+        <button className="dropdownIcon">{t("project.moreInfo")}</button>
+        <div className="dropdown-content">
+          <div>{t("project.text")}</div>
         </div>
       </div>
     </section>
   );
 };
-
 export default Portfolio;

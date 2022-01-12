@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./ScrollButton.scss";
 import arrow from "./assets/arrow-up-solid.svg";
 
-const ScrollButton = (props) => {
+const ScrollButton = () => {
   const [visible, setVisible] = useState(false);
 
   const toggleVisible = () => {
@@ -13,16 +13,13 @@ const ScrollButton = (props) => {
       setVisible(false);
     }
   };
-
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
       behavior: "smooth",
     });
   };
-
   window.addEventListener("scroll", toggleVisible);
-
   return (
     <section className="scrollButton">
       <button

@@ -4,37 +4,48 @@ import "./Home.scss";
 import Portfolio from "../Portfolio/Portfolio";
 import SkillSection from "../SkillSection/SkillSection";
 import ContactForm from "../ContactForm/ContactForm";
-
 import cv from "./assets/CV_JustynaGabiga.pdf";
 import ScrollButton from "../ScrollButton/ScrollButton";
 import { useTranslation } from "react-i18next";
 
-const Home = (props) => {
-  const { t, i18n } = useTranslation("common");
+const Home = () => {
+  const { t } = useTranslation("common");
   const [state, setState] = useState("skillsActive");
   const setActive = (active) => {
-    console.log("SetActiv " + active);
     setState(active);
   };
-  return (
-    <section className="mainContainer" className={state}>
+  return ( 
+    <section className="mainContainer" state>
       <section className="home">
-        <section className="mainSection" >
+        <section className="mainSection">
           <div className="up">
-            <h1>{t("welcome.title")}</h1>
+            <h1>
+              {t("welcome.title1")}
+              <br></br>
+              {t("welcome.title2")}
+            </h1>
             <div className="description">
               {t("description.part1")}&nbsp;{t("description.part8")}
               {t("description.part2")}
               <strong>
-              {t("description.part3")}
-              <a href="https://www.coderscamp.edu.pl/" target="_blank" rel="noreferrer">
-                 CodersCrew
-              </a>
-              {t("description.part4")}
-              {t("description.part5")}
-              <a href="https://sfi.pl/pl/" target="_blank" rel="noreferrer">
-              {t("description.title")}
-              </a>.
+                {t("description.part3")}
+                <a
+                  href="https://www.coderscamp.edu.pl/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  CodersCrew
+                </a>
+                {t("description.part4")}
+                {t("description.part5")}
+                <a
+                  href="https://sfi.pl/pl/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {t("description.title")}
+                </a>
+                .
               </strong>
               <br></br>
               {t("description.part6")}
@@ -44,7 +55,7 @@ const Home = (props) => {
               <ul className="buttonSection">
                 <Link
                   style={{ textDecoration: "none" }}
-                  activeClass="active"
+                  activeclass="active"
                   to="skills"
                   onClick={() => setActive("skillsActive")}
                 >
@@ -61,7 +72,7 @@ const Home = (props) => {
                 </Link>
                 <Link
                   style={{ textDecoration: "none" }}
-                  activeClass="active"
+                  activeclass="active"
                   to="portfolio"
                   onClick={() => setActive("portfolioActive")}
                 >
@@ -78,7 +89,7 @@ const Home = (props) => {
                 </Link>
                 <Link
                   style={{ textDecoration: "none" }}
-                  activeClass="active"
+                  activeclass="active"
                   to="contact"
                   onClick={() => setActive("contactActive")}
                 >
@@ -104,7 +115,6 @@ const Home = (props) => {
             </Link>
           </div>
         </section>
-
         <section className="activeSectionContainer">
           <section className="activeSection">
             <div className="desktopView">

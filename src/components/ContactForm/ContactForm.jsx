@@ -1,14 +1,15 @@
 import React from "react";
 import "./ContactForm.scss";
 import { useTranslation } from "react-i18next";
-import photo from "./assets/photo.jfif";
-const ContactForm = (props) => {
-  const { t, i18n } = useTranslation("common");
+import photo from "./assets/photo.webp";
+
+const ContactForm = () => {
+  const { t } = useTranslation("common");
   return (
     <section>
       <div className="contactContainer">
         <div className="contactTextSection">
-          <img src={photo} alt="Profile photo" />
+          <img src={photo} alt="person" />
         </div>
         <h3>{t("contact.title")}</h3>
         <div className="contactTextSection">

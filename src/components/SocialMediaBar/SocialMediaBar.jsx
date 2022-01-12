@@ -5,9 +5,9 @@ import github from "./assets/icons8-github.svg";
 import { useTranslation } from "react-i18next";
 import globe from "./assets/globe-europe-solid(1).svg";
 
-const SocialMediaBar = (props) => {
+const SocialMediaBar = () => {
   const [lang, setLang] = useState("pl");
-  let [t, i18n] = useTranslation("common");
+  let [i18n] = useTranslation("common");
   let changeLang = (lng) => {
     lang === "en" ? setLang("pl") : setLang("en");
     i18n.changeLanguage(lng);
@@ -18,7 +18,7 @@ const SocialMediaBar = (props) => {
         <a
           href="https://www.linkedin.com/in/justyna-gabiga-187388172/"
           target="_blank"
-          rel="noreferrer"
+          rel="noopener noreferrer"
         >
           <img src={linkedIn} alt="linkedin icon"></img>
         </a>

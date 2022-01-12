@@ -21,8 +21,6 @@ i18next.init({
       },
   },
 });
-
-
 ReactDOM.render(
   <React.StrictMode>
   <Router>

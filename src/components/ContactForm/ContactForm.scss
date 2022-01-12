@@ -6,9 +6,10 @@
   flex-direction: column;
   img {
     box-sizing: border-box;
+    height: 100%;
     width: 70%;
     margin: 0vh 0vw 5vh 0vw;
-    border: 2px solid $dark-color;
+    border-radius: 50%;
     box-shadow: 0px 4px 4px $shadow-color;
   }
   h2{
@@ -66,6 +67,7 @@
   .contactContainer {
     img {
       width: 100%;
+      height: auto;
     }
     h3 {
       @include header3_900();
