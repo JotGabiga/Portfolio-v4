@@ -118,7 +118,7 @@ $text-font-family: "Rubik", sans-serif;
 // TEXT - 600px - 900px
 
 @mixin header1_900() {
-  font-size: 3.1rem;
+  font-size: 2.9rem;
 }
 @mixin header2_900() {
   font-size: 1.4rem;
@@ -139,7 +139,7 @@ $text-font-family: "Rubik", sans-serif;
 // TEXT - 450px - 600px
 
 @mixin header1_600() {
-  font-size: 2.9rem;
+  font-size: 2.5rem;
 }
 @mixin header2_600() {
   font-size: 1.3rem;
@@ -159,7 +159,7 @@ $text-font-family: "Rubik", sans-serif;
 // TEXT - 0px - 450px
 
 @mixin header1_450() {
-  font-size: 2.8rem;
+  font-size: 1.7rem;
 }
 @mixin header2_450() {
   font-size: 1.2rem;
@@ -171,7 +171,7 @@ $text-font-family: "Rubik", sans-serif;
   font-size: 0.8rem;
 }
 @mixin text_450() {
-  font-size: 0.8rem;
+  font-size: 0.7rem;
 }
 @mixin buttonText_450() {
   font-size: 0.75em;
