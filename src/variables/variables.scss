@@ -1,6 +1,5 @@
 // MAIN CONTAINER STYLE
 @mixin containerStyle($padding, $flex-direction, $margin) {
-  max-width: 1900px;
   padding: $padding;
   margin: $margin;
   display: flex;
