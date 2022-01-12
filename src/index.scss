@@ -1,6 +1,7 @@
 @import "variables/variables.scss";
 html {
   height: 100%;
+  max-width: 1900px;
 }
 body {
   background: $basic-color;
