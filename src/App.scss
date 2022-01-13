@@ -1,6 +1,30 @@
+@import "./variables/variables.scss";
 .App {
-  max-width:2048px;
+  max-width: 2048px;
   margin-left: auto;
   margin-right: auto;
 }
-
+.ieMessage {
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  img {
+    margin-top: 3vh;
+  margin-bottom: 3vh;
+    border-radius: 50%;
+    width: 400px;
+    height: 400px;
+  }
+  h1 {
+    margin: 2vh 0vw 2vh 0vw;
+    font-size: 50px;
+    @include uniHeader12(center);
+    @include header2();
+  }
+  p {
+    @include uniText(center);
+    font-size: 1,25rem;
+  }
+}
