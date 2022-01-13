@@ -1,3 +1,7 @@
+import 'core-js/stable';
+import 'react-app-polyfill/ie9';
+import 'react-app-polyfill/ie11';
+import 'react-app-polyfill/stable';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.scss';
@@ -8,9 +12,7 @@ import {I18nextProvider} from "react-i18next";
 import i18next from "i18next";
 import common_pl from "./translations/pl/common.json";
 import common_en from "./translations/en/common.json";
-import 'react-app-polyfill/ie9';
-import 'react-app-polyfill/ie11';
-import 'react-app-polyfill/stable';
+
 
 i18next.init({
   interpolation: { escapeValue: false },  
