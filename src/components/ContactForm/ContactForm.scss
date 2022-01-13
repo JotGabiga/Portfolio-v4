@@ -4,13 +4,6 @@
   text-align: right;
   display: flex;
   flex-direction: column;
-  img {
-    box-sizing: border-box;
-    height: 100%;
-    width: 70%;
-    margin: 0vh 0vw 5vh 0vw;
-    border-radius: 50%;
-  }
   h2{
     @include header2();
     @include uniHeader12(right);
@@ -25,6 +18,13 @@
   }
 }
 .contactTextSection {
+  img {
+    box-sizing: border-box;
+    height: 350px;
+    width: 350px;
+    margin: 5vh 0vw 5vh 0vw;
+    border-radius: 50%;
+  }
   :first-child {
     text-decoration: underline;
     text-decoration-style: solid;
