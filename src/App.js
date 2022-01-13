@@ -4,14 +4,6 @@ import "./App.scss";
 import IeProblem from './IE problem.gif'
 import { isIE } from 'react-device-detect';
 
-// const styles = {
-//   color: "red",
-//   fontSize: "32px"
-// };
-
-
-// style={{styles}}
-
 function App() {
   if (isIE)
     return (
