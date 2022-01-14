@@ -16,7 +16,7 @@ const Home = () => {
     setState(active);
   };
   return ( 
-    <section className="mainContainer" state>
+    <section className={`mainContainer ${state}`}>
       <section className="home">
         <section className="mainSection">
           <div className="up">

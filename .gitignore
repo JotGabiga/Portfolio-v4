@@ -7,6 +7,7 @@
 .firebase/hosting.YnVpbGQ.cache
 .firebaserc
 firebase.json
+.env
 # testing
 /coverage
 
